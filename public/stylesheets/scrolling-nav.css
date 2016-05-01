@@ -1,0 +1,603 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+
+/* about section */
+
+.about-section {
+  height: 100%;
+  padding-top: 50px;
+  text-align: center;
+  background-size: 100% auto;
+  background-position: center;
+background-image: url('../img/bg2.jpg');
+
+}
+.about-section h1 {
+  text-align: left;
+  font-size: 38px;
+  font-weight: bold;
+  color: lightgray;
+}
+.about-section h2 {
+  text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+.about-section p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*.services-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  margin: auto;
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url("../img/services.jpg");
+}
+.services-section h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  color: rgb(77, 0, 0);
+}*/
+
+
+/* Service section */
+
+.services-section {
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url("../img/Infinite-space.jpg");}
+
+/********************************/
+
+
+/*          Panel cards         */
+
+
+/********************************/
+
+.panel.panel-card {
+  position: relative;
+  height: 300px;
+  border: none;
+  overflow: hidden;
+}
+.panel.panel-card .panel-heading {
+  position: relative;
+  z-index: 2;
+  height: 120px;
+  border-bottom-color: #fff;
+  overflow: hidden;
+  -webkit-transition: height 600ms ease-in-out;
+  transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 120%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.panel.panel-card .panel-heading button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.panel.panel-card .panel-figure {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-box-shadow: 0 0 0 3px #fff;
+  box-shadow: 0 0 0 3px #fff;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card .panel-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  -webkit-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
+.panel.panel-card .panel-thumbnails {
+  padding: 0 15px 20px;
+}
+.panel-thumbnails .thumbnail {
+  width: 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.panel.panel-card:hover .panel-heading {
+  height: 55px;
+  -webkit-transition: height 400ms ease-in-out;
+  transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-body {
+  padding-top: 20px;
+  -webkit-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
+
+/* Contact section */
+
+.contact-section {
+  height: 100%;
+  padding-top: 50px;
+  color: lightgray;
+  text-align: center;
+  margin: 0 auto;
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url("../img/become.jpg");
+  background-repeat: repeat-x;
+  background-color: #eee;
+}
+.wrapper {
+  text-align: center;
+}
+
+/*Footer Contact*/
+
+.footer-contact {
+  background: #2c2c2c;
+  padding: 20px 0;
+  color: #a8a8a8;
+}
+.footer-contact h3, .footer-contact p {
+  color: #a8a8a8;
+}
+.footer-contact .title {
+  border-bottom: 1px solid #000;
+}
+.footer-contact ul {
+  list-style: none;
+}
+.footer-contact ul li {
+  line-height: 24px;
+}
+.footer-contact ul li .glyphicon {
+  font-size: 10px;
+  top: 0;
+}
+
+/*Footer CSS*/
+
+footer {
+  background: #b1b0b0;
+}
+footer .panel {
+  box-shadow: none;
+}
+.collapse-footer {}
+.collapse-footer p {
+  font-size: 14px;
+  line-height: normal;
+}
+.collapse-footer .panel {
+  background: none;
+  background-color: transparent;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.collapse-footer .panel-heading {
+  background-color: #707070;
+  color: #231f20;
+  border-radius: 0;
+}
+.collapse-footer .nav-footer {
+  padding: 0;
+  color: #312424;
+  margin-left: 0;
+}
+.collapse-footer .nav-footer li {
+  list-style: none;
+}
+.collapse-footer h5.title {
+  border-bottom: 1px #c4c4c4 solid;
+  padding-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.collapse-footer h5.title span {
+  border-bottom: 3px #312424 solid;
+  bottom: 1px;
+  padding-bottom: 4px;
+}
+.collapse-footer .col-lg-6 .nav-footer li {
+  width: 45%;
+  margin-right: 5%;
+  float: left;
+}
+.collapse-footer .nav-footer li {}
+.collapse-footer .nav-footer li a {
+  color: #312424;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 0;
+  display: inherit;
+}
+.collapse-footer .nav-footer li a:hover {
+  background: none;
+  background-color: transparent;
+  color: #000;
+}
+
+/*footer Subscribe*/
+
+#subscribe {
+  float: right;
+  margin-top: 9px;
+  width: 250px;
+}
+.subscribe {
+  width: 100%;
+  position: relative;
+  float: left;
+  line-height: 22px;
+  border: 1px #312424 solid;
+  border-radius: 3px;
+  padding: 3px;
+}
+.subscribe button.btn {
+  float: right;
+  z-index: 999;
+  position: relative;
+  background-color: #312424;
+  border: none;
+  box-shadow: none !important;
+  text-shadow: none;
+}
+.subscribe input[type="text"] {
+  position: absolute;
+  width: 65%;
+  float: Left;
+  margin-left: 0;
+  height: 30px;
+  line-height: 18px;
+  padding: 0 2px 0 26px;
+  border-radius: 1px;
+  border: none;
+  box-shadow: none !important;
+  text-shadow: none;
+  z-index: 0;
+  background: none;
+  background-color: transparent;
+  background-position: 8px 10px;
+  background-repeat: no-repeat;
+}
+.subscribe:hover input, .subscribe input:focus {
+  width: 100%;
+  margin-left: 0px;
+}
+
+/*Copyrights CSS*/
+
+.copyright {
+  background: #2c2c2c;
+  padding: 0 20px;
+  color: #b1b0b0;
+  font-size: 12px;
+}
+.copyright-img {
+  padding: 20px 0;
+}
+
+/* Scroll Up Button */
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.input-group {
+  margin-top: 10px;
+}
+
+/* Login */
+
+#login-dp {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow: hidden;
+  background-color: white;
+}
+#login-dp .help-block {
+  font-size: 12px
+}
+#login-dp .bottom {
+  background-color: rgba(255, 255, 255, .8);
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 14px;
+}
+#login-dp .social-buttons {
+  margin: 12px 0
+}
+#login-dp .social-buttons a {
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc
+}
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+.btn-tw:hover {
+  color: #fff;
+  background-color: #59b5fa;
+}
+@media(max-width:768px) {
+  #login-dp {
+    background-color: inherit;
+    color: #fff;
+  }
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none;
+  }
+}
+.topspace {
+  margin: 100px auto;
+  max-width: 805px;
+}
+
+/*
+    Fade content bs-carousel with hero headers
+    Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+    Image credits: unsplash.com
+    */
+
+
+/********************************/
+
+
+/*       Fade Bs-carousel       */
+
+
+/********************************/
+
+.fade-carousel {
+  position: relative;
+  height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+  height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+  margin: 0 2px;
+  background-color: #f39c12;
+  border-color: #f39c12;
+  opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+
+
+/*          Hero Headers        */
+
+
+/********************************/
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.hero h1 {
+  font-size: 6em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.fade-carousel .carousel-inner .item .hero {
+  opacity: 0;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+  opacity: 1;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+
+/********************************/
+
+
+/*            Overlay           */
+
+
+/********************************/
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #080d15;
+  opacity: .2;
+}
+
+/********************************/
+
+
+/*          Custom Buttons      */
+
+
+/********************************/
+
+.btn.btn-lg {
+  padding: 10px 40px;
+}
+.btn.btn-hero, .btn.btn-hero:hover, .btn.btn-hero:focus {
+  color: #f5f5f5;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  outline: none;
+  margin: 20px auto;
+}
+
+/********************************/
+
+
+/*       Slides backgrounds     */
+
+
+/********************************/
+
+.fade-carousel .slides .slide-1, .fade-carousel .slides .slide-2, .fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818);
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+}
+
+/********************************/
+
+
+/*          Media Queries       */
+
+
+/********************************/
+
+@media screen and (min-width: 980px) {
+  .hero {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero h1 {
+    font-size: 4em;
+  }
+}
+
+
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+#myCarousel .list-group .active {
+	background-color: darkgray;
+}
+
+@media (min-width: 992px) {
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;}
+}
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;}
+}
